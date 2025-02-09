@@ -1,0 +1,48 @@
+main.cpp: In instantiation of ‘bool ConcurrentHashMap<K, V>::testDisplay() const [with K = std::__cxx11::basic_string<char>; V = int]’:
+main.cpp:85:9:   required from ‘void ConcurrentHashMap<K, V>::test() [with K = std::__cxx11::basic_string<char>; V = int]’
+main.cpp:187:23:   required from here
+main.cpp:127:15: warning: passing ‘const ConcurrentHashMap<std::__cxx11::basic_string<char>, int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+  127 |         insert("TEST", Order<K, V>(10, 2));
+      |         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:48:10: note:   in call to ‘void ConcurrentHashMap<K, V>::insert(const K&, Order<K, V>&&) [with K = std::__cxx11::basic_string<char>; V = int]’
+   48 |     void insert(const K& symbol, Order<K, V>&& order) {
+      |          ^~~~~~
+main.cpp:128:15: warning: passing ‘const ConcurrentHashMap<std::__cxx11::basic_string<char>, int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+  128 |         insert("TEST", Order<K, V>(15, 3));
+      |         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:48:10: note:   in call to ‘void ConcurrentHashMap<K, V>::insert(const K&, Order<K, V>&&) [with K = std::__cxx11::basic_string<char>; V = int]’
+   48 |     void insert(const K& symbol, Order<K, V>&& order) {
+      |          ^~~~~~
+ICICIBANK: {lotSize: 10, price: 2} 
+LT: {lotSize: 10, price: 2} 
+SBIN: {lotSize: 10, price: 2} 
+INFY: {lotSize: 10, price: 2} 
+HINDUNILVR: {lotSize: 10, price: 2} 
+TCS: {lotSize: 10, price: 2} 
+HDFCBANK: {lotSize: 15, price: 4} {lotSize: 10, price: 2} 
+BAJFINANCE: {lotSize: 10, price: 2} 
+RELIANCE: {lotSize: 10, price: 2} 
+NESTLEIND: {lotSize: 30, price: 2} 
+ICICIBANK: {lotSize: 10, price: 2} 
+LT: {lotSize: 10, price: 2} 
+SBIN: {lotSize: 10, price: 2} 
+INFY: {lotSize: 10, price: 2} 
+HINDUNILVR: {lotSize: 10, price: 2} 
+TCS: {lotSize: 10, price: 2} 
+HDFCBANK: {lotSize: 15, price: 4} {lotSize: 10, price: 2} 
+BAJFINANCE: {lotSize: 10, price: 2} 
+RELIANCE: {lotSize: 10, price: 2} 
+ICICIBANK: {lotSize: 10, price: 2} 
+LT: {lotSize: 10, price: 2} 
+SBIN: {lotSize: 10, price: 2} 
+INFY: {lotSize: 10, price: 2} 
+HINDUNILVR: {lotSize: 10, price: 2} 
+TCS: {lotSize: 10, price: 2} 
+HDFCBANK: {lotSize: 15, price: 4} {lotSize: 10, price: 2} 
+TEST: {lotSize: 15, price: 3} {lotSize: 10, price: 2} 
+BAJFINANCE: {lotSize: 10, price: 2} 
+RELIANCE: {lotSize: 10, price: 2} 
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.
